@@ -186,7 +186,7 @@
         <Component class="javax.swing.JLabel" name="lblStatus">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/com/controledegastos/icones/dberror.png"/>
+              <Image iconType="3" name="/publiccontroledegastos/view/images/dberror.png"/>
             </Property>
           </Properties>
         </Component>

@@ -54,7 +54,7 @@ public class TelaLoginCGastos extends javax.swing.JFrame {
             }
         });
 
-        lblStatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/controledegastos/icones/dberror.png"))); // NOI18N
+        lblStatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/publiccontroledegastos/view/images/dberror.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -126,7 +126,8 @@ public class TelaLoginCGastos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-      
+      TelaPrincipal principal = new TelaPrincipal();
+      principal.setVisible(true);
     }//GEN-LAST:event_btnLoginActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

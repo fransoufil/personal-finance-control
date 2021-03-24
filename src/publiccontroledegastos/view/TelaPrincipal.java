@@ -35,6 +35,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menAjuda = new javax.swing.JMenu();
         menSobre = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
+        menCliente = new javax.swing.JMenuItem();
         menBackup = new javax.swing.JMenuItem();
         menSair = new javax.swing.JMenuItem();
 
@@ -220,6 +221,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu6.setText("Opções");
 
+        menCliente.setText("Clientes");
+        menCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menClienteActionPerformed(evt);
+            }
+        });
+        jMenu6.add(menCliente);
+
         menBackup.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.ALT_DOWN_MASK));
         menBackup.setText("Backup");
         menBackup.addActionListener(new java.awt.event.ActionListener() {
@@ -288,6 +297,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     private void menSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menSobreActionPerformed
 
+        TelaSobre sobre = new TelaSobre();
+        sobre.setVisible(true);
+        
     }//GEN-LAST:event_menSobreActionPerformed
 
     private void menLanCadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menLanCadActionPerformed
@@ -346,6 +358,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
+    private void menClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menClienteActionPerformed
+        TelaCliente cliente = new TelaCliente();
+        cliente.setVisible(true);
+        Desktop.add(cliente);
+    }//GEN-LAST:event_menClienteActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JDesktopPane Desktop;
@@ -370,6 +388,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu menAjuda;
     private javax.swing.JMenuItem menBackup;
     private javax.swing.JMenuItem menCadUsu;
+    private javax.swing.JMenuItem menCliente;
     private javax.swing.JMenuItem menLanCad;
     private javax.swing.JMenuItem menSair;
     private javax.swing.JMenuItem menSobre;

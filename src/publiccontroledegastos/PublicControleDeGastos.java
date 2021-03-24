@@ -1,21 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package publiccontroledegastos;
 
-/**
- *
- * @author franz
- */
+import publiccontroledegastos.view.TelaLoginCGastos;
+
+
 public class PublicControleDeGastos {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        TelaLoginCGastos login = new TelaLoginCGastos();
+        login.setVisible(true);
     }
     
 }
