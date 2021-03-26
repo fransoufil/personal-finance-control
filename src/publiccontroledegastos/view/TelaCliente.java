@@ -345,7 +345,7 @@ public class TelaCliente extends javax.swing.JInternalFrame {
                 .addContainerGap())
         );
 
-        setLocation(new java.awt.Point(0, 0));
+        setBounds(0, 0, 1000, 500);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
